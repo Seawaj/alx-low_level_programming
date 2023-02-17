@@ -10,7 +10,6 @@ int main(void)
 	int i;
 	int j;
 	int k;
-	int n;
 
 	i = 0;
 	k = 0;
