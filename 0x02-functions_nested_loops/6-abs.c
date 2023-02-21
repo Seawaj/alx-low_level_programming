@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _abs - function
+ * _abs - function to return absolute value of an integer
  *
- * @int: any integer
+ * @a: any integer
  *
- * Return: Alway 0 (Success)
+ * Return: absolute value of @a
  */
-int _abs(int)
+int _abs(int a)
 {
 	int i;
 
-	i = abs(int);
+	i = abs(a);
 	return (i);
 }
