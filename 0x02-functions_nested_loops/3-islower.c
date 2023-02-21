@@ -12,6 +12,6 @@ int _islower(int c)
 {
 	char j;
 
-	j = c	
+	j = c;
 	return (islower(j));
 }
