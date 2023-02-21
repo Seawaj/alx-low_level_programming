@@ -10,8 +10,12 @@
  */
 int _islower(int c)
 {
-	char j;
-
-	j = c;
-	return (islower(j));
+	if (islower(c) == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (1);
+	}
 }
