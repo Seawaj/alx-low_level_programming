@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _islower - the function
+ * _isalpha - the function
  *
  * @c: 'Takes any integer (c)'
  *
