@@ -8,7 +8,7 @@
  *
  * Return: 1 Always (Success)
  */
-int int _isalpha(int c)
+int _isalpha(int c)
 {
 	if (isalpha(c) == 0)
 	{
