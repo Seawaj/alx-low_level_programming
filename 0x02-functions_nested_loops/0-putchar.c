@@ -1,0 +1,16 @@
+#include "_putchar.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char *str;
+
+	str = "_putchar";
+	for (int i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	_putchar('\n');
+}
