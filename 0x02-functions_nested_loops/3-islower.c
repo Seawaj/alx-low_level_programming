@@ -9,9 +9,6 @@
  * Return: 1 Always (Success)
  */
 int _islower(int c)
-{
-	int j;
-	
-	j = islower(c);
-	return (j);
+{	
+	return (islower(c + '0'));
 }
