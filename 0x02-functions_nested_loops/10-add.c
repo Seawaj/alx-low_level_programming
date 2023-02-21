@@ -3,6 +3,9 @@
 /**
  * add - add two numbers
  *
+ * @a: any integer
+ * @b: any integer
+ *
  * Return: Always 0
  */
 int add(int a, int b)
