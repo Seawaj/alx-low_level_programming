@@ -21,7 +21,7 @@ int main(void)
 		if ((j + k) == i)
 		{
 			printf(", ");
-			printf("%d", i);
+			printf("%ld", i);
 			j = k;
 			k = i;
 			l++;
