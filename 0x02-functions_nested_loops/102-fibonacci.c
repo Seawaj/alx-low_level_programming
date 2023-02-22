@@ -24,7 +24,7 @@ int main(void)
 			printf("%d", i);
 			l++;
 		}
-		i++
+		i++;
 	}
 	printf("\n");
 	return (0);
