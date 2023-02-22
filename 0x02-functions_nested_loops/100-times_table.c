@@ -25,20 +25,20 @@ void print_times_table(int n)
 					_putchar((k % 10) + '0');
 				}
 				else
-				{
-					_putchar(k + '0');
-				}
+				{_putchar(k + '0'); }
 				if (j == n)
-				{
-					break;
-				}
+				{break; }
 				_putchar(',');
 				if (((j + 1) * i) >= 10)
+				{_putchar(' '); }
+				else if (((j + 1) * i) >= 100)
 				{
+					_putchar(' ');
 					_putchar(' ');
 				}
 				else
 				{
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 				}
