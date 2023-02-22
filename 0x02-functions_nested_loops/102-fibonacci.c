@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i, j, k, l;
+	long long int i, j, k, l;
 
 	printf("%d, %d", 1, 2);
 	i = 3;
@@ -21,7 +21,7 @@ int main(void)
 		if ((j + k) == i)
 		{
 			printf(", ");
-			printf("%ld", i);
+			printf("%lld", i);
 			j = k;
 			k = i;
 			l++;
