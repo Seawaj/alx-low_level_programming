@@ -29,7 +29,7 @@ void print_times_table(int n)
 				if (j == n)
 				{break; }
 				_putchar(',');
-				if (((j + 1) * i) >= 10)
+				if ((((j + 1) * i) >= 10) && (((j + 1) * i) < 100))
 				{_putchar(' '); }
 				else if (((j + 1) * i) >= 100)
 				{
