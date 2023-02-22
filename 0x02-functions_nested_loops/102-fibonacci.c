@@ -7,27 +7,22 @@
  */
 int main(void)
 {
-	long long int i, j, k, l;
+	int a, b, c, count;
 
-	printf("%d, %d", 1, 2);
-	i = 3;
-	l = 2;
-	j = 1;
-	k = 2;
-	while (i > 0)
+	a = 1;
+	b = 2;
+	count = 0;
+	printf("%d %d, ", a, b);
+	while (b <= 20365011074 && count < 48)
 	{
-		if (l > 50)
+		c = a + b;
+		if (c <= 0)
 		{break; }
-		if ((j + k) == i)
-		{
-			printf(", ");
-			printf("%lld", i);
-			j = k;
-			k = i;
-			l++;
-		}
-		i++;
+		printf("%d, ", c);
+		a = b;
+		b = c;
+		count++;
 	}
-	printf("\n");
+	printf("%d\n", a + b);
 	return (0);
 }
