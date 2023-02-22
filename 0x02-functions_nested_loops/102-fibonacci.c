@@ -10,7 +10,7 @@ int main(void)
 	int i, j, k;
 
 	printf("%d, %d", 1, 2);
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 50;)
 	{
 		j = i - 1;
 		k = i - 2;
@@ -18,6 +18,7 @@ int main(void)
 		{
 			printf(", ");
 			printf("%d", i);
+			i++;
 		}
 	}
 	printf("\n");
