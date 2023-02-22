@@ -12,16 +12,18 @@ int main(void)
 	printf("%d, %d", 1, 2);
 	i = 3;
 	l = 2;
+	j = 1;
+	k = 2;
 	while (i > 0)
 	{
 		if (l > 50)
 		{break; }
-		j = i - 1;
-		k = i - 2;
 		if ((j + k) == i)
 		{
 			printf(", ");
 			printf("%d", i);
+			j = k;
+			k = i;
 			l++;
 		}
 		i++;
