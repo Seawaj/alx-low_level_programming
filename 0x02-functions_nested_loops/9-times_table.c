@@ -28,11 +28,15 @@ void times_table(void)
 				break;
 			}
 			_putchar(',');
-			if (k < 10)
+			if (((j + 1) * i) >= 10)
 			{
 				_putchar(' ');
 			}
-			_putchar(' ');
+			else
+			{
+				_putchar(' ');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
