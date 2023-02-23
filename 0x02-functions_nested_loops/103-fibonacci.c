@@ -13,7 +13,6 @@ int main(void)
 	b = 2;
 	c = 0;
 	sum = 0;
-	printf("%lu, %lu", a, b);
 	while (c <= 4000000)
 	{
 		c = a + b;
