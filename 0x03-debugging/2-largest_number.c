@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -26,6 +25,6 @@ int largest_number(int a, int b, int c)
 		largest = c;
 	}
 
-	printf("%d", largest);
+	_putchar(largest + '0');
 	return (largest);
 }
