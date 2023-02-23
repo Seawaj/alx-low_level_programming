@@ -20,7 +20,7 @@ int main(void)
 		a = b;
 		b = c;
 		count++;
-		if (c > 50)
+		if (count > 50)
 		{break; }
 		printf(", ");
 	}
