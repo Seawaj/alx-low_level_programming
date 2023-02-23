@@ -16,12 +16,14 @@ int main(void)
 	while (count < 48)
 	{
 		c = a + b;
-		if (c <= 0)
-		{break; }
-		printf("%lu, ", c);
+		printf("%lu", c);
 		a = b;
 		b = c;
 		count++;
+		if (c => 48)
+		{break; }
+		printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
