@@ -12,7 +12,7 @@ int main(void)
 	a = 1;
 	b = 2;
 	count = 3;
-	printf("%lu %lu, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	while (count <= 50)
 	{
 		c = a + b;
