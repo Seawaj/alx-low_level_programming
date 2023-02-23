@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	double a, b, c;
+	float a, b, c;
 	int count;
 
 	a = 1;
