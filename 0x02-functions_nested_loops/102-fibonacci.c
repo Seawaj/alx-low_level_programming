@@ -11,16 +11,16 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	count = 0;
+	count = 3;
 	printf("%lu %lu, ", a, b);
-	while (count < 48)
+	while (count <= 50)
 	{
 		c = a + b;
 		printf("%lu", c);
 		a = b;
 		b = c;
 		count++;
-		if (c => 48)
+		if (c > 50)
 		{break; }
 		printf(", ");
 	}
