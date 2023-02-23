@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	long double a, b, c;
+	double a, b, c;
 	int count;
 
 	a = 1;
 	b = 2;
 	count = 3;
-	printf("%.0Lf, %.0Lf, ", a, b);
+	printf("%.0lf, %.0lf, ", a, b);
 	while (count <= 98)
 	{
 		c = a + b;
-		printf("%.0Lf", c);
+		printf("%.0lf", c);
 		a = b;
 		b = c;
 		count++;
