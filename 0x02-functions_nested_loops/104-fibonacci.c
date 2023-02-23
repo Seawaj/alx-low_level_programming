@@ -13,11 +13,11 @@ int main(void)
 	a = 1;
 	b = 2;
 	count = 3;
-	printf("%.0lf, %.0lf, ", a, b);
+	printf("%.0f, %.0f, ", a, b);
 	while (count <= 98)
 	{
 		c = a + b;
-		printf("%.0lf", c);
+		printf("%.0f", c);
 		a = b;
 		b = c;
 		count++;
