@@ -17,7 +17,7 @@ int main(void)
 	while (count <= 98)
 	{
 		c = a + b;
-		printf("%.0Lf", c * 2);
+		printf("%.0Lf", c);
 		a = b;
 		b = c;
 		count++;
