@@ -10,20 +10,19 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
-	const int k;
+	int i, j, k;
 	
-	k = strlen(s) + 1;
+	k = strlen(s);
 
-	char a[k];
+	char *a;
 
 	j = 0;
 
-	for (i = k - 1;  i >= 0; i--)
+	for (i = 0;  i < k; i++)
 	{
 		a[i] = s[i];
 	}
-	for (i = k - 2; i >= 0; i--)
+	for (i = k - 1; i >= 0; i--)
 	{
 		s[j] = a[i];
 		j++;
