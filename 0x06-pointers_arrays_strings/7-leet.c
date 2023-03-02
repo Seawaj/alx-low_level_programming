@@ -13,7 +13,7 @@
 char *leet(char *str)
 {
 	int i;
-	char *result, c;
+	char c;
 
 
 	for (i = 0; (str[i] != '\0') && (str[i] != '\n'); i++)
