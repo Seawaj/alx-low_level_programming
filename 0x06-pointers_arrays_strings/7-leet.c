@@ -12,7 +12,7 @@
  */
 char *leet(char *str)
 {
-	int i, j;
+	int i, j, k;
 	char *result, c;
 
 	result = (char *)malloc(strlen(str) + 1);
@@ -29,7 +29,8 @@ char *leet(char *str)
 
 		if (c == 'a' || c == 'e' || c == 'o' || c == 't' || c == 'l')
 		{
-			result[j] = '0' + (c == 'a') * 4 + (c == 'e') * 3 + (c == 'o') * 0 + (c == 't') * 7 + (c == 'l') * 1;
+			k = '0' + (c == 'a') * 4 + (c == 'e') * 3 + (c == 'o')
+			result[j] = k * 0 + (c == 't') * 7 + (c == 'l') * 1;
 		}
 	}
 
