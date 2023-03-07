@@ -9,6 +9,7 @@
  * @src: from memory arear
  * @n: any unsigned int
  *
+ * Return: pointer to a pointer
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
