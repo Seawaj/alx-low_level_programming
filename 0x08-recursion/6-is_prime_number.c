@@ -27,10 +27,8 @@ int is_prime(int n, int i)
  */
 int is_prime_number(int n)
 {
-	if (n < 1)
+	if (n <= 1)
 		return (0);
-	else if (n == 1)
-		return (1);
 	else
 		return (is_prime(n, n - 1));
 }
