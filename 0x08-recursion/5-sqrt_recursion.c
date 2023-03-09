@@ -10,7 +10,7 @@
  * Return: integer
  */
 
-int _sqrt(n, i)
+int _sqrt(int n, int i)
 {
 	if (i * i == n) 
 		return (n);
