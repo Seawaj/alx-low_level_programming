@@ -28,7 +28,7 @@ int real_pal(char *s, int i, int j)
 {
 	if (*(s + j - 1) != *(s + i))
 		return (0);
-	else if (i >= len)
+	else if (i >= j)
 		return (1);
 	else
 		return (real_pal(s, i + 1, j - 1));
