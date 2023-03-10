@@ -7,7 +7,7 @@
  *
  * Return: integer
  */
-int _len (char *s)
+int _len(char *s)
 {
 	if (*s == '\0')
 		return (0);
