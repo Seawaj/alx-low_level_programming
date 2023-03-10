@@ -1,0 +1,7 @@
+!<arch>
+main.h/         0           0     0     644     67        `
+#!/bin/bash
+git add .
+git commit -m "Functions Variables"
+git push
+
