@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -10,12 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum;
+	int mul;
 	
 	if (argc == 3)
 	{
-		sum = argv[(argc - 1) * (argc - 2)];
-		printf("%d\n", sum);
+		mul = atoi(argv[argc - 1]) * atoi(argv[argc - 2]);
+		printf("%d\n", mul);
 	}
 	printf("Error\n");
 	return (0);
