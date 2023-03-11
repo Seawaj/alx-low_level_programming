@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,9 +11,9 @@
 */
 int main(int argc, char *argv[])
 {
-	int num, j, result, coins[];
+	int num, j, result;
+	int coins[5] = {25, 10, 5, 2, 1};
 
-	coins[] = {25, 10, 5, 2, 1};
 	if (argc != 2)
 	{
 		printf("Error\n");
