@@ -30,8 +30,6 @@ char **strtow(char *str)
 		for (; str[j] != ' '; j++)
 			l++;
 		ptr[i] = malloc(l * sizeof(char));
-		for (; m < j; m++)
-			ptr[i][]
 		l = 0;
 	}
 	return (ptr);
