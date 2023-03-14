@@ -13,9 +13,16 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	unsigned int i, j;
+	unsigned int j;
+	int i, k;
 
 	if ((ac == 0) || (av == NULL))
+		return (NULL);
+	k = 0;
+	for (i = 0; i < ac; i++)
+		k += strlen(av[i]);
+	str = malloc(k * sizeof(char));
+	if (str == NULL)
 		return (NULL);
 	for (i = 0; av[0][i]; i++)
 		str[i] = av[0][i];
