@@ -14,7 +14,7 @@ char **strtow(char *str)
 	char **ptr;
 	int i, j, k, l;
 
-	if ((str == NULL) || (str == ''))
+	if (str == NULL)
 		return (NULL);
 	k = 1, j = 0, l = 0;
 	for (i = 0; str[i]; i++)
