@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * create_array - Creates an array of chars, and initializes it with a specific char
+ * create_array - Creates an array of chars, and initializes it
  *
  * @size: Unit required
  * @c: Size in byte
@@ -11,5 +11,13 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	return (malloc(size * sizeof(c)));
+	char *ptr;
+
+	if (size == 0)
+		return (NULL);
+
+	ptr = malloc(size * sizeof(c));
+	if (ptr != NULL)
+		return (ptr);
+	return (NULL);
 }
