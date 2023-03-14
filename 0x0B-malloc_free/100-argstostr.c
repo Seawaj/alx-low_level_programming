@@ -17,7 +17,10 @@ char *argstostr(int ac, char **av)
 
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
-	for (i = 0; i < ac; i++)
+	for (i = 0; av[0][i]; i++)
+		str[i] = av[0][i];
+	str[strlen(str)] = '\n';
+	for (i = 1; i < ac; i++)
 	{
 		if (av[i] == NULL)
 			return (NULL);
