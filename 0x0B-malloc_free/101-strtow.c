@@ -12,14 +12,14 @@
 char **strtow(char *str)
 {
 	char **ptr;
-	int i, j, k, l, m, **pt;
+	int i, j, k, l;
 
 	if ((str == NULL) || (str == ""))
 		return (NULL);
 	k = 1, j = 0, l = 0, m = 0;
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] = ' ')
+		if (str[i] == ' ')
 			k += 1;
 	}
 	ptr = malloc(k * sizeof(char *));
