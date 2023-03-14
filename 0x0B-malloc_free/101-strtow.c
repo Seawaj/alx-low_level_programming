@@ -16,7 +16,7 @@ char **strtow(char *str)
 
 	if ((str == NULL) || (str == ""))
 		return (NULL);
-	k = 1, j = 0, l = 0, m = 0;
+	k = 1, j = 0, l = 0;
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == ' ')
