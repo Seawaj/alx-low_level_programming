@@ -14,21 +14,20 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int i;
+	unsigned int i;
 
-	if ((n == NULL) || (n < 0))
-		return (NULL);
 	if (s1 == NULL)
-		s1 == "";
+		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	if (strlen(s2) < n)
 		n = strlen(s2);
-	strncat(s1, s2, n);
-	ptr = malloc(strlen(s1) + 1);
+	ptr = malloc(strlen(s1) + n + 1);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; s1[i]; i++)
 		ptr[i] = s1[i];
+	for (i = 0; i < n; i++)
+		ptr[strlen(ptr)] = s2[i];
 	return (ptr);
 }
