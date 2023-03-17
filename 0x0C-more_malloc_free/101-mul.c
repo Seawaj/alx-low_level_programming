@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "main.h"
 
+/**
+ * multiply - multiply 2 numbers
+ *
+ * @num1: num1
+ * @num2: num2
+ *
+ * Return: mul of num1 and num2
+ */
 int multiply(char *num1, char *num2)
 {
 	int n1, n2;
@@ -11,6 +20,14 @@ int multiply(char *num1, char *num2)
 	return (n1 * n2);
 }
 
+/**
+ * main - Entry Point
+ *
+ * @argc: number of args entered
+ * @argv: array of args
+ *
+ * Return: Always 0 on success
+ */
 int main(int argc, char *argv[])
 {
 	char *num1, *num2;
@@ -19,7 +36,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 	num1 = argv[1];
 	num2 = argv[2];
@@ -28,7 +45,7 @@ int main(int argc, char *argv[])
 		if (!isdigit(num1[i]))
 		{
 			printf("Error\n");
-			return (98);
+			exit(98);
 		}
 	}
 	for (i = 0; num2[i] != '\0'; i++)
@@ -36,11 +53,11 @@ int main(int argc, char *argv[])
 		if (!isdigit(num2[i]))
 		{
 			printf("Error\n");
-			return (98);
+			exit(98);
 		}
 	}
 
 	result = multiply(num1, num2);
 	printf("%d\n", result);
-	return 0;
+	return (0);
 }
