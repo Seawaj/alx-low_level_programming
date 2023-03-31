@@ -5,6 +5,8 @@
 * free_list - frees a linked list
 *
 * @head: linked list to be freed
+*
+* Return: void
 */
 void free_list(list_t *head)
 {
