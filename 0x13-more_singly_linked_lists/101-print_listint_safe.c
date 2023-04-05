@@ -54,10 +54,10 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t i, j;
 
+	if (!head)
+                exit(98);
 	i = get_num(head);
 	j = 0;
-	if (!head)
-		exit(98);
 	if (i == 0)
 	{
 		for (; head != NULL; i++)
