@@ -18,7 +18,7 @@ listint_t *find_listint_loop(listint_t *head)
 	high = head;
 	if (!head)
 		return (NULL);
-	while ((low && high) && fast->next)
+	while ((low && high) && high->next)
 	{
 		low = low->next;
 		high = high->next->next;
